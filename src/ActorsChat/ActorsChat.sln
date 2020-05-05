@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29324.140
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActorsChat.Api", "..\ActorsChat.Api\ActorsChat.Api.csproj", "{A5DA2F7B-9F77-474B-918A-9003479C3B4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActorsChat.Domain", "ActorsChat.Domain\ActorsChat.Domain.csproj", "{29E959E2-8869-4E5C-9B1F-034189B85A9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5DA2F7B-9F77-474B-918A-9003479C3B4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5DA2F7B-9F77-474B-918A-9003479C3B4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5DA2F7B-9F77-474B-918A-9003479C3B4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5DA2F7B-9F77-474B-918A-9003479C3B4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29E959E2-8869-4E5C-9B1F-034189B85A9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29E959E2-8869-4E5C-9B1F-034189B85A9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29E959E2-8869-4E5C-9B1F-034189B85A9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29E959E2-8869-4E5C-9B1F-034189B85A9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {811C53AE-FC28-4A81-B830-627D15F9241C}
+	EndGlobalSection
+EndGlobal
