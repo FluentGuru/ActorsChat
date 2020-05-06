@@ -10,7 +10,12 @@ using System.Threading.Tasks;
 
 namespace ActorsChat.Grains.Users
 {
-    public class UserProfileGrain : Grain<UserProfile>, IUserProfile
+    public class UserProfileState : UserProfile
+    {
+
+    }
+
+    public class UserProfileGrain : Grain<UserProfileState>, IUserProfile
     {
         private readonly IDateTime dateTime;
 
@@ -50,7 +55,7 @@ namespace ActorsChat.Grains.Users
 
         public async Task Start()
         {
-            State = new UserProfile() { Nickname = this.GetPrimaryKeyString(), CreateDate = dateTime.Now, Status = UserStatuses.Online };
+            State = new UserProfileState() { Nickname = this.GetPrimaryKeyString(), CreateDate = dateTime.Now, Status = UserStatuses.Online };
             await WriteStateAsync();
         }
     }

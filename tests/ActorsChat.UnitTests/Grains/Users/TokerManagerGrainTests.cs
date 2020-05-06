@@ -43,5 +43,16 @@ namespace ActorsChat.UnitTests.Grains.Users
 
             token.Verify(t => t.Refresh(It.IsAny<TimeSpan>()), Times.Once);
         }
+
+        [Test]
+        public async Task ShouldCancelTokenGrain()
+        {
+            var tokenManager = await CreateTokenManager();
+            var token = Silo.AddProbe<IToken>("TOKEN");
+
+            await tokenManager.Cancel("TOKEN");
+
+            token.Verify(t => t.Cancel(), Times.Once);
+        }
     }
 }
